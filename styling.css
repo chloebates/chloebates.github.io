@@ -2,8 +2,12 @@ body {
 	background-color: teal;
 }
 h1 {
-	font-style: Arial;
+	font-family: Georgia;
 }
 p {
 	color: white;
+	font-family: Georgia;
+}
+h2 {
+	font-family: Georgia;
 }
