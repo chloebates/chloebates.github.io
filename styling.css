@@ -2,21 +2,3 @@ ul.nav li{
 	display: inline-block;
 	padding-right: 10px;
 }
-body {
-	background-color: teal;
-}
-h1 {
-	font-family: Georgia;
-}
-p {
-	color: white;
-	font-family: Georgia;
-}
-h2 {
-	font-family: Georgia;
-}
-img {
-	border-radius: 50px;
-	margin: auto;
-	width: 50%;
-}
