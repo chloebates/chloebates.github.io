@@ -1,4 +1,46 @@
 ul.nav li{
-	display: inline-block;
-	padding-right: 10px;
+	background-color: black;
+	padding: 0px 30px 0px 30px;
+	color: white;
+	font-size: 20px;
+	display: table-cell;
+}
+ul.nav {
+	display: table;
+	width: 100%;
+	text-align: justify;
+}
+a {
+	background-color: black;
+	color: white;
+}
+h1 { 
+	color: teal;
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 50px;
+	font-family: Courier, monospace;
+}
+h2 {
+	color: teal;
+	text-align: center;
+	font-size: 20px;
+	font-family: Courier New, monospace;
+}
+#page_intro {
+	background-color: black;
+	padding: 50px 0px 50px 0px;
+}
+#navigation_buttons {
+	background-color: black;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-family: Courier New, monospace;
+}
+
+.food_group {
+	padding: 50px;
+	border-style: solid;
+	font-family: Courier New, monospace;
 }
