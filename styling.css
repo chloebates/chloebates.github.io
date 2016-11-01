@@ -15,21 +15,27 @@ a {
 	color: white;
 }
 h1 { 
-	color: teal;
+	color: black;
 	text-align: center;
 	padding-bottom: 30px;
 	font-size: 50px;
 	font-family: Courier, monospace;
 }
-h2 {
-	color: teal;
+#page_intro h2 {
+	color: black;
 	text-align: center;
 	font-size: 20px;
+	font-style: bold;
 	font-family: Courier New, monospace;
 }
 #page_intro {
-	background-color: black;
 	padding: 50px 0px 50px 0px;
+	background-image: url('http://static.businessinsider.com/image/536d34a4ecad046b153e69bc/image.jpg');
+	background-image: url('http://cdn.theculturetrip.com/wp-content/uploads/2016/02/restaurant-939435_960_720.jpg');
+	background-image: url('https://www.soelden.com/urlaub/images/SD/WI/headerbilder/aktivitaeten_header_restaurant,method=scale,prop=data,id=1200-510.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 #navigation_buttons {
 	background-color: black;
@@ -42,5 +48,12 @@ h2 {
 .food_group {
 	padding: 50px;
 	border-style: solid;
+	font-family: Courier New, monospace;
+}
+.food_group h2 {
+	color: black;
+	text-align: center;
+	font-size: 40px;
+	text-decoration: underline;
 	font-family: Courier New, monospace;
 }
