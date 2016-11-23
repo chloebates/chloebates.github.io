@@ -1,67 +1,180 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Group Meal Planner</title>
-  		<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  		<link href="styling.css" rel="stylesheet">
-	</head>
-	<body>
-		<div id="page_intro">
-			<h1>Group Meal Planner</h1>
-			<h2>Got to plan a meal for a group of friends or co-workers? <br />
-			Then this is the place for you!</h2>	
-		</div>	
-		<div id='navigation_buttons'>
-			<ul class='nav'>
-				<li><a href="#vegetarian">Vegetarian   </a></li>
-				<li><a href="#vegan">Vegan   </a></li>
-				<li><a href="#dairy">Dairy Free   </a></li>
-				<li><a href="#gluten">Gluten Free   </a></li>			</ul>
-		</div>
-		<div id='vegetarian' class='food_group'>
-			<h2>Vegetarian</h2>
-			<p>Here is a list of restaurants in Exeter that cater for Vegetarians</p>
-			<ul class='restaurants'>
-				<li>On the Waterfront</li>
-				<li>Jasmin Thai Restaurant</li>
-				<li>Lloyds Kitchen</li>
-				<li>Old Firehouse</li>
-				<li>Harry's</li>
-			</ul>
-		</div>
-		<div id='vegan' class='food_group'>
-			<h2>Vegan</h2>
-			<p>Here is a list of restaurants in Exeter that cater for Vegans</p>
-			<ul class='restuarants'>
-				<li>Old Firehouse</li>
-				<li>Jasmin Thai Restaurant</li>
-				<li>Herbies</li>
-				<li>Oddfellows</li>
-				<li>Las Iguanas</li>
-			</ul>
-		</div>
-		<div id='dairy' class='food_group'>
-			<h2>Dairy Free</h2>
-			<p>Here is a list of restaurants in Exeter that have Dairy Free options</p>
-			<ul class='restuarants'>
-				<li>Old Firehouse</li>
-				<li>Lloyds Kitchen</li>
-				<li>Hubbox</li>
-				<li>Las Iguanas</li>
-				<li>Oddfellows</li>
-			</ul>
-		</div>
-		<div id='gluten' class='food_group'>
-			<h2>Gluten Free</h2>
-			<p>Here is a list of restaurants in Exeter that have Gluten Free options</p>
-			<ul class='restuarants'>
-				<li>On the Waterfront</li>
-				<li>Lloyds Kitchen</li>
-				<li>Harry's</li>
-				<li>Bella Italia</li>
-				<li>Las Iguanas</li>
-			</ul>
-		</div>
-	</body>
+<head>
+	<title>Restaurant Guide - Exeter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="bootstrap.css" rel="stylesheet">
+    <link href="font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="styling.css" rel="stylesheet">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Resturant Guide</span> Exeter
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#vegetarian">Vegetarian/Vegan</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#gluten">Gluten Free</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#groups">Large Groups</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#reviews">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Restaurant Guide</h1>
+                        <p class="intro-text">A comprehensive guide to the best restaurants in Exeter for specific meal requirements</p>
+                        <a href="#about" class="btn btn-circle page-scroll"><span></span>
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<div id = "page-surround">
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="about-section">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About</h2>
+                <p>
+                    This comprehensive guide gives you the best places to eat in Exeter for different dietary requirements and also a section designed for large groups so that everyone can have a great time and you all fit suitably in the room.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vegetarian" class="content-section text-center">
+        <div class="vegetarian-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Vegetarian/Vegan Options</h2>
+                    <p>
+                        In this section we will list all of the best restaurants in town that cater not only for vegetarians but vegans as well so if you or someone in your party is a friend to the animals of this world they can still have a good time and a nice meal!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gluten" class="content-section text-center">
+        <div class="gluten-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Gluten Free</h2>
+                    <p>
+                        In this section we will list all of the best restaurants in town that cater for those who cannot or don't wish to eat gluten.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="groups" class="content-section text-center">
+        <div class="group-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Large Groups</h2>
+                    <p>
+                        If your party has a large amount of people in it these are the best places to go in Exeter due to the size and setup of their restaurant.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="container content-section text-center">
+        <div class="review-section">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Restaurant Reviews</h2>
+                <p>Read Reviews of places to eat and drink in Exeter</p>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJt5yyUGlodyZRswtf_3W_Uq8SFKAFtff_3_AbTIv0QAxJhw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+        </div>
+        <div id="form">
+        </div>
+    </section>
+
+    <div id="map"></div>
+
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(50.7184, -3.5339), 
+                zoom: 14,
+                scrollweel: false,
+                navigationControl: false,
+                mapTypeControl: false,
+                scaleControl: false,
+                draggable: false
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+	<!-- Code for snazzy navbar from startbootstrap.com-->
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script> 
+    <script src="scrolling.js"></script> 
+
+    <div class="page-bottom">
+        <ul>
+            <li>
+                <a href="#page-top">Page Top</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#vegetarian">Vegetarian/Vegan</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#gluten">Gluten Free</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#groups">Large Groups</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#reviews">Reviews</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+	
 </html>
