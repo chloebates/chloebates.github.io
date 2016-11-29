@@ -1,60 +1,385 @@
-ul.nav li{
-	background-color: black;
-	padding: 0px 30px 0px 30px;
-	color: white;
-	font-size: 20px;
-	display: table-cell;
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
 }
-ul.nav {
-	display: table;
-	width: 100%;
-	text-align: justify;
+#page-surround {
+  background: #ffd3ad; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ffd3ad, coral); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ffd3ad, coral); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ffd3ad, coral); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffd3ad, coral); /* Standard syntax */
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  p {
+    margin: 0 0 35px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
 }
 a {
-	background-color: black;
-	color: white;
-	padding: 0px;
+  color: #42DCA3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-h1 { 
-	color: black;
-	text-align: center;
-	padding-bottom: 30px;
-	font-size: 50px;
-	font-family: Courier, monospace;
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #1d9b6c;
 }
-#page_intro h2 {
-	color: black;
-	text-align: center;
-	font-size: 20px;
-	font-style: bold;
-	font-family: Courier New, monospace;
+.light {
+  font-weight: 400;
 }
-#page_intro {
-	padding: 50px 0px 50px 0px;
-	background-image: url('http://static.businessinsider.com/image/536d34a4ecad046b153e69bc/image.jpg');
-	background-image: url('http://cdn.theculturetrip.com/wp-content/uploads/2016/02/restaurant-939435_960_720.jpg');
-	background-image: url('https://www.soelden.com/urlaub/images/SD/WI/headerbilder/aktivitaeten_header_restaurant,method=scale,prop=data,id=1200-510.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: black;
 }
-#navigation_buttons {
-	background-color: black;
-	color: white;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	font-family: Courier New, monospace;
+.navbar-custom .navbar-toggle {
+  color: white;
+  background-color: black;
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+.navbar-custom a {
+  color: white;
+}
+.navbar-custom .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li.active {
+  outline: none;
+}
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
 }
 
-.food_group {
-	padding: 50px;
-	border-style: solid;
-	font-family: Courier New, monospace;
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: url("https://www.lumixgexperience.panasonic.co.uk/app/uploads/gallery/Jolyon/jip_29.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
-.food_group h2 {
-	color: black;
-	text-align: center;
-	font-size: 40px;
-	text-decoration: underline;
-	font-family: Courier New, monospace;
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+}
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.content-section {
+  padding-top: 100px;
+}
+.about-section {
+  color: black;
+}
+.about-section h2 {
+  font-size: 50px;
+}
+.vegetarian-section {
+  width: 100%;
+  color: black;
+}
+.vegetarian-section h2{
+  padding: 150px 0;
+  background: url("http://www.weightlossresources.co.uk/img/v/vegetarian-diet.jpg") no-repeat center center scroll;
+  background-color: black;
+  background-position: bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-size: 50px;
+}
+.gluten-sction {
+  width: 100%;
+  color: white;
+}
+.gluten-section h2{
+  padding: 150px 0;
+  background: url("http://i.huffpost.com/gen/1077942/images/o-HEALTHY-FAST-FOOD-facebook.jpg") no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-size: 50px;
+}
+.group-section {
+  width: 100%;
+  color: white;
+}
+.group-section h2{
+  padding: 150px 0;
+  background: url("http://www.cancerfightersthrive.com/wp-content/uploads/2015/02/Restaurant-2x1.jpg") no-repeat center center scroll;
+  background-position: bottom;
+  background-color: gray;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-size: 50px;
+}
+.review-section {
+  width: 100%
+  color: black;
+}
+.review-section h2 {
+  padding: 150px 0;
+  color: black;
+  font-size: 50px;
+  background: url("https://files-cardinalatwork-stanford-edu.s3-us-west-2.amazonaws.com/s3fs-public/styles/9-col-banner/public/blankconversationspeechbubbles_870x330.png?itok=-FagxIxR") no-repeat center center scroll;
+  background-position: bottom;
+  background-color: gray;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.page-bottom li{
+  display: inline;
+  padding: 30px;
+  font-size: 20px;
+}
+.page-bottom li a:hover{
+  color: black;
+  font-style: underline;
+}
+.page-bottom {
+  background-color: coral;
+  width: 100%;
+  padding: 50px;
+}
+.page-bottom li a {
+  color: white;
+}
+#map {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+}
+@media (min-width: 767px) {
+  .content-section {
+    padding-top: 250px;
+  }
+  .download-section {
+    padding: 100px 0;
+  }
+  #map {
+    height: 400px;
+    margin-top: 250px;
+  }
+}
+.btn {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+.btn-default {
+  border: 1px solid #42DCA3;
+  color: #42DCA3;
+  background-color: transparent;
+}
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #42DCA3;
+  outline: none;
+  color: black;
+  background-color: #42DCA3;
+}
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
